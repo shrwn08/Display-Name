@@ -30,14 +30,15 @@ const DisplayName = () => {
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmitbtn}>
         <label>First Name:&nbsp;</label>
-        <input value={firstName} onChange={handChangeFirstName} required/>
+        <input type="text" value={firstName} onChange={handChangeFirstName} required/>
         <br />
         <label>Last Name:&nbsp;</label>
-        <input value={lastName} onChange={handChangeLastName} required/>
+        <input type="text" value={lastName} onChange={handChangeLastName} required/>
         <br />
         <button type="submit">Submit</button>
+        <p>{submit ?`Full Name: ${fullName}`:null}</p>
       </form>
-      <p>{submit ?`Full Name: ${fullName}`:null}</p>
+      
     </div>
   );
 };
