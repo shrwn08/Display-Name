@@ -16,6 +16,9 @@ const DisplayName = () => {
 
   const handleSubmitbtn = (event) => {
     event.preventDefault();
+    if(firstName.length === 0 || lastName.length === 0){
+
+    }
     setSubmit(true);
     setFullName(`${firstName} ${lastName}`);
     setFirstName('');
@@ -27,10 +30,10 @@ const DisplayName = () => {
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmitbtn}>
         <label>First Name:&nbsp;</label>
-        <input value={firstName} onChange={handChangeFirstName} />
+        <input value={firstName} onChange={handChangeFirstName} required/>
         <br />
         <label>Last Name:&nbsp;</label>
-        <input value={lastName} onChange={handChangeLastName} />
+        <input value={lastName} onChange={handChangeLastName} required/>
         <br />
         <button type="submit">Submit</button>
       </form>
