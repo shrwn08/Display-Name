@@ -16,11 +16,9 @@ const DisplayName = () => {
 
   const handleSubmitbtn = (event) => {
     event.preventDefault();
-    if(firstName.length === 0 || lastName.length === 0){
-
-    }
+  
     setSubmit(true);
-    setFullName(`${firstName} ${lastName}`);
+    setFullName(firstName +" "+lastName);
     setFirstName('');
     setLastName('');
   };
