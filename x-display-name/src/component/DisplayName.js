@@ -18,7 +18,7 @@ const DisplayName = () => {
     event.preventDefault();
   
     setSubmit(true);
-    setFullName(firstName +" "+lastName);
+    setFullName(`${firstName} ${lastName}`);
     setFirstName('');
     setLastName('');
   };
