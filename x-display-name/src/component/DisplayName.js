@@ -19,8 +19,8 @@ const DisplayName = () => {
   
     setSubmit(true);
     setFullName(`${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    // setFirstName('');
+    // setLastName('');
   };
 
   return (
