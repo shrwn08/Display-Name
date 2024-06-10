@@ -34,9 +34,9 @@ const DisplayName = () => {
         <input type="text" value={lastName} onChange={handChangeLastName} required/>
         <br />
         <button type="submit">Submit</button>
-        <p>{submit ?`Full Name: ${fullName}`:null}</p>
+        
       </form>
-      
+      <p>{submit ?`Full Name: ${fullName}`:null}</p>
     </div>
   );
 };
